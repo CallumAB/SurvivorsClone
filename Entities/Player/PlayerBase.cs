@@ -1,6 +1,6 @@
 using Godot;
 
-public partial class Player : CharacterBody2D
+public partial class PlayerBase : CharacterBody2D
 {
 	// [Export] makes this variable editable in the Godot Inspector
 	[Export] public float Speed = 400.0f;
