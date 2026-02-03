@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://p4dwen1rw3uu"]
 
 [ext_resource type="Script" uid="uid://bxf0581q5vegy" path="res://Entities/Player/Base/PlayerBase.cs" id="1_vu507"]
-[ext_resource type="Texture2D" uid="uid://42tqp4p86hgl" path="res://icon.svg" id="2_a5yny"]
+[ext_resource type="Texture2D" uid="uid://c6vymmdqu217g" path="res://kenzo.png" id="2_lxymc"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_kpjcp"]
 size = Vector2(128, 128)
@@ -10,7 +10,11 @@ size = Vector2(128, 128)
 script = ExtResource("1_vu507")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=334902569]
-texture = ExtResource("2_a5yny")
+texture = ExtResource("2_lxymc")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1059076068]
 shape = SubResource("RectangleShape2D_kpjcp")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1309592829]
+process_callback = 0
+position_smoothing_enabled = true

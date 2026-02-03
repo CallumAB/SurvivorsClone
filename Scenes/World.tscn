@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://m6x70kj5qj64"]
+
+[ext_resource type="PackedScene" uid="uid://p4dwen1rw3uu" path="res://Entities/Player/Base/PlayerBase.tscn" id="1_j0p05"]
+[ext_resource type="Texture2D" uid="uid://42tqp4p86hgl" path="res://icon.svg" id="2_5nsto"]
+
+[node name="World" type="Node2D" unique_id=1574259523]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1414527002]
+modulate = Color(0.19219694, 0.19219697, 0.19219697, 1)
+scale = Vector2(20, 20)
+texture = ExtResource("2_5nsto")
+
+[node name="PlayerBase" parent="." unique_id=1856514491 instance=ExtResource("1_j0p05")]

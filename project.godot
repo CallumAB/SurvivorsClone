@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="SurvivorsClone"
-run/main_scene="uid://p4dwen1rw3uu"
+run/main_scene="uid://m6x70kj5qj64"
 config/features=PackedStringArray("4.6", "C#", "GL Compatibility")
 config/icon="res://icon.svg"
 
