@@ -1,0 +1,18 @@
+# --- Godot 4 Specific ---
+.godot/
+*.import
+export_presets.cfg
+
+# --- .NET / C# Specific ---
+bin/
+obj/
+*.sln
+*.csproj
+*.user
+.vs/
+.vscode/
+mono_crash.*.json
+
+# --- OS Specific ---
+.DS_Store
+Thumbs.db
