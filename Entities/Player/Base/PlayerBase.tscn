@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://p4dwen1rw3uu"]
 
-[ext_resource type="Script" uid="uid://bxf0581q5vegy" path="res://Entities/Player/PlayerBase.cs" id="1_vu507"]
+[ext_resource type="Script" uid="uid://bxf0581q5vegy" path="res://Entities/Player/Base/PlayerBase.cs" id="1_vu507"]
 [ext_resource type="Texture2D" uid="uid://42tqp4p86hgl" path="res://icon.svg" id="2_a5yny"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_kpjcp"]
