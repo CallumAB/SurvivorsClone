@@ -3,6 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://p4dwen1rw3uu" path="res://Entities/Player/Base/PlayerBase.tscn" id="1_j0p05"]
 [ext_resource type="Texture2D" uid="uid://42tqp4p86hgl" path="res://icon.svg" id="2_5nsto"]
 [ext_resource type="PackedScene" uid="uid://dsvy7pepybexr" path="res://Entities/Enemies/Enemy.tscn" id="3_5nsto"]
+[ext_resource type="Script" uid="uid://rg4iavry1wdl" path="res://Scenes/EnemySpawner.cs" id="4_gjpho"]
 
 [node name="World" type="Node2D" unique_id=1574259523]
 
@@ -14,3 +15,13 @@ texture = ExtResource("2_5nsto")
 [node name="PlayerBase" parent="." unique_id=1856514491 instance=ExtResource("1_j0p05")]
 
 [node name="Enemy" parent="." unique_id=1873410430 instance=ExtResource("3_5nsto")]
+
+[node name="EnemySpawner" type="Node2D" parent="." unique_id=1358440711]
+script = ExtResource("4_gjpho")
+EnemyScene = ExtResource("3_5nsto")
+
+[node name="Timer" type="Timer" parent="EnemySpawner" unique_id=1350263389]
+wait_time = 1.5
+autostart = true
+
+[connection signal="timeout" from="EnemySpawner/Timer" to="EnemySpawner" method="OnTimerTimeout"]
