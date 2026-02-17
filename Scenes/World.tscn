@@ -14,8 +14,6 @@ texture = ExtResource("2_5nsto")
 
 [node name="PlayerBase" parent="." unique_id=1856514491 instance=ExtResource("1_j0p05")]
 
-[node name="Enemy" parent="." unique_id=1873410430 instance=ExtResource("3_5nsto")]
-
 [node name="EnemySpawner" type="Node2D" parent="." unique_id=1358440711]
 script = ExtResource("4_gjpho")
 EnemyScene = ExtResource("3_5nsto")
