@@ -3,7 +3,8 @@
 [ext_resource type="Script" uid="uid://bhkxiuhvb3pc7" path="res://Entities/Enemies/Enemy.cs" id="1_da0hj"]
 [ext_resource type="Texture2D" uid="uid://42tqp4p86hgl" path="res://icon.svg" id="1_ttlo4"]
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_ttlo4"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_da0hj"]
+size = Vector2(128, 128)
 
 [node name="Enemy" type="CharacterBody2D" unique_id=1873410430 groups=["Enemies"]]
 collision_layer = 2
@@ -15,4 +16,4 @@ script = ExtResource("1_da0hj")
 texture = ExtResource("1_ttlo4")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=402295946]
-shape = SubResource("CircleShape2D_ttlo4")
+shape = SubResource("RectangleShape2D_da0hj")

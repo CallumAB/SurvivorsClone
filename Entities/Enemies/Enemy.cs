@@ -12,8 +12,7 @@ public partial class Enemy : CharacterBody2D
 
 	public override void _Ready()
 	{
-		// For now, we find the player by their name in the World scene
-		// In a bigger project, we'd use a more robust system
+		// Find the player by their name in the World scene
 		_player = GetTree().Root.FindChild("PlayerBase", true, false) as Node2D;
 	}
 
@@ -34,7 +33,9 @@ public partial class Enemy : CharacterBody2D
 		Health -= amount;
 		
 		// Visual feedback
+		Tween hitTween = CreateTween();
 		Modulate = Colors.Red; 
+		hitTween.TweenProperty(this, "modulate", Colors.White, 0.2f);
 		
 		// Check for death
 		if (Health <= 0)
@@ -45,7 +46,6 @@ public partial class Enemy : CharacterBody2D
 
 	private void Die()
 	{
-		// This is where we will eventually spawn XP gems
 		GD.Print("Enemy Defeated!");
 		QueueFree(); // Removes the enemy from the scene
 	}
