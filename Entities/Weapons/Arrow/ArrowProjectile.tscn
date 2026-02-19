@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://ccdybci18ytg0"]
+
+[ext_resource type="Script" uid="uid://blmgfij10gyky" path="res://Entities/Weapons/Arrow/ArrowProjectile.cs" id="1_0qgoh"]
+
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_ofsrh"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_ofsrh"]
+
+[node name="ArrowProjectile" type="Area2D" unique_id=684449656]
+collision_layer = 0
+collision_mask = 2
+script = ExtResource("1_0qgoh")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1067166406]
+scale = Vector2(16, 16)
+texture = SubResource("PlaceholderTexture2D_ofsrh")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=737165618]
+shape = SubResource("CircleShape2D_ofsrh")

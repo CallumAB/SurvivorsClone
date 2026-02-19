@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://bxf0581q5vegy" path="res://Entities/Player/Base/PlayerBase.cs" id="1_vu507"]
 [ext_resource type="Texture2D" uid="uid://c6vymmdqu217g" path="res://kenzo.png" id="2_lxymc"]
+[ext_resource type="PackedScene" uid="uid://dfibuv2pummp7" path="res://Entities/Weapons/Arrow/Arrow.tscn" id="3_himki"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_kpjcp"]
 size = Vector2(128, 128)
@@ -21,3 +22,7 @@ shape = SubResource("RectangleShape2D_kpjcp")
 [node name="Camera2D" type="Camera2D" parent="." unique_id=1309592829]
 process_callback = 0
 position_smoothing_enabled = true
+
+[node name="WeaponManager" type="Node2D" parent="." unique_id=860521941]
+
+[node name="Arrow" parent="WeaponManager" unique_id=626961033 instance=ExtResource("3_himki")]

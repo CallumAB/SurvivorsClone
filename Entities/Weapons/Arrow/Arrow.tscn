@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://dfibuv2pummp7"]
+
+[ext_resource type="Script" uid="uid://ge3fybqextmd" path="res://Entities/Weapons/Arrow/Arrow.cs" id="1_fml8g"]
+[ext_resource type="PackedScene" uid="uid://ccdybci18ytg0" path="res://Entities/Weapons/Arrow/ArrowProjectile.tscn" id="2_lgygm"]
+
+[node name="Arrow" type="Node2D" unique_id=626961033]
+script = ExtResource("1_fml8g")
+ProjectileScene = ExtResource("2_lgygm")
+
+[node name="Timer" type="Timer" parent="." unique_id=727575958]
+autostart = true
+
+[connection signal="timeout" from="Timer" to="." method="OnTimerTimeout"]
